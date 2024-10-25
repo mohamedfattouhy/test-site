@@ -99,7 +99,7 @@ document.addEventListener('scroll', () => {
         document.body.offsetHeight, document.documentElement.offsetHeight,
         document.body.clientHeight, document.documentElement.clientHeight
       ),
-      clientHeight = document.documentElement.clientHeight,
+      clientHeight = document.documentElement.clientHeight + 30,
       userScroll = window.scrollY,
       pctScrolled = Math.round((userScroll / (totalHeight-clientHeight))*100) ;
   
