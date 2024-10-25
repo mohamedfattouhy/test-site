@@ -55,7 +55,7 @@ transform: scale(1.1);
 
 /* Progress Bar */
 #progress-bar {
-width: 100vw;
+width: 100%;
 /* background: rgb(146, 172, 210); */
 background: rgb(81, 102, 134); 
 height: 5px;
