@@ -8,8 +8,8 @@ header {
 body {
   margin: 0;
   padding: 0;
-  width: 110%;  /* Force le body à prendre toute la largeur du viewport */
-  overflow-x: hidden;  /* Empêche le débordement horizontal */
+  width: 105%;  /* Force le body à prendre toute la largeur du viewport */
+  overflow-x: clip;  /* Empêche le débordement horizontal */
 }
 
 
