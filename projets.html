@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+
+<body>
+
+    <title>
+        Projets personnels
+    </title>
+
+
+    
+<div class="row" style="margin: 0 auto;">
+
+    <!-- <nav class="border-bottom border-white border-2 fixed-top navbar navbar-expand-md navbar-dark bg-dark justify-content-center-resp"> -->
+    <nav class="fixed-top navbar navbar-expand-md navbar-dark bg-dark justify-content-center-resp">
+
+            <button class="navbar-toggler rounded-pill mb-2" id="navbar-toggler" style="box-shadow: rgba(0, 0, 0, 1) 0px 5px 8px;">
+                <nav class="fixed-top navbar navbar-expand-md navbar-dark bg-dark justify-content-center-resp">
+
+                    <button class="navbar-toggler rounded-pill mb-2" id="navbar-toggler" style="box-shadow: rgba(0, 0, 0, 1) 0px 5px 8px;">
+                      <!-- <span class="bi bi-list-nested" style="font-size: 2rem; color: #a59cf7;"></span> -->
+                      <svg class="ham hamRotate ham1" viewBox="10 10 80 80" width="30" onclick="this.classList.toggle('active')">
+                          <path
+                                class="line top"
+                                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                          <path
+                                class="line middle"
+                                d="m 30,50 h 40" />
+                          <path
+                                class="line bottom"
+                                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                        </svg>
+                    </button>
+            </button>
+      
+            <div class="mt-2 navbar-nav" id="navbar-nav">
+
+                <a href="index.html" class="rounded-pill me-4 mb-2 nav-link lien-nav" style="text-align: center; font-family: sans-serif; font-weight: bold;
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">À propos</a>
+
+                <a href="experiences.html" class="rounded-pill me-4 mb-2 nav-link lien-nav" style="text-align: center; font-family: sans-serif; font-weight: bold;
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Expériences</a>
+
+                <a href="projets.html" class="rounded-pill me-4 mb-2 nav-link lien-nav active" style="text-align: center; font-family: sans-serif; font-weight: bold;
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Projets</a>
+
+        </div>
+
+        <!-- Progress bar -->
+        <div id="progress-bar">
+            <span id="progress"></span>
+        </div>
+    
+    </nav>         
+      
+     
+    <main class="mt-xxl-1 mt-xl-1 mt-lg-1 mt-md-5 margin-top-sm-6" style="min-height: 100vh;">
+
+
+    <header>
+        <h2 style="color: rgb(121, 134, 203); text-align: center; text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);">
+            <i class="bi bi-journal" style="color: rgb(121, 134, 203); margin-right: 1.5%;"></i>Projets personnels
+        </h2>
+    </header>
+
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%; padding-bottom: 2.5%"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word; font-size: large; font-family:'Times New Roman', Times, serif">
+                Dans cette section, vous trouverez quelques projets réalisés (pour le fun) avec le langage <code>Python</code>,
+                afin d'améliorer mes compétences sur ce langage, en particulier pour le <span style="color: rgba(180, 145, 246, 0.588)">pré-traitement</span> et la <span style="color: rgba(180, 145, 246, 0.588)">visualisation de données</span>.
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 2%; font-size: large;" class="justify-content-center row margin-top-sm-2">
+        <div class="col-sm-10 col-10">
+            Pour plus de détails, faites un tour sur mon github:
+        </div>
+        <div style="text-align: center;">
+            <span>
+                <i class="bi bi-github" style="color: white;"></i>
+                <a class="text-decoration-none" href="https://github.com/mohamedfattouhy?tab=repositories" target="_blank">github
+                </a>
+            </span>
+        </div>
+    </div> -->
+
+
+    <!-- <div style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;
+    padding-bottom: 2%; font-size: large;" class="justify-content-center row margin-top-sm-2">
+        <div>Pour plus de détails, faites un tour sur mon github:</div>
+        <span><i class="bi bi-github" style="color: white;"></i>
+                <a class="text-decoration-none" href="https://github.com/mohamedfattouhy?tab=repositories" target="_blank">https://github.com/mohamedfattouhy
+                </a>
+        </span>
+    </div> -->
+
+
+    <div style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 2%; font-size: large;" class="justify-content-center row margin-top-sm-2">
+        <div class="col-10-custom">
+            Pour plus de détails, faites un tour sur mon github:
+            <span>
+                <a class="text-decoration-none" href="https://github.com/mohamedfattouhy?tab=repositories" target="_blank"><i class="bi bi-github" style="color: white;"></i> github
+                </a>
+            </span>
+        </div>
+    </div>
+
+
+    <section class="row justify-content-center margin-top-sm-2" style="padding-bottom: 5%;">
+        <hr class="col-10 hr-styles-2" style="height: 8px; width: 92%;">
+    </section>
+
+
+    <h3 class="margin-top-sm-1" style="color: rgb(158, 128, 228); text-align: center; padding-bottom: 1.5%; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);">
+    <i class="bi bi-bar-chart-fill" style="color: rgb(158, 128, 228); margin-right: 1.5%;"></i>Visualisation de données open source</h3>
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%; padding-bottom: 2.5%"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word;">
+                Ci-dessous, des captures provenant de deux dashboards interactifs que j'ai réalisé avec 
+                <a class="text-decoration-none" href="https://dash.plotly.com/" target="_blank">Dash</a>,
+                un framework open source de visualisation de données en Python.
+                En utilisant plusieurs types de visualisations différentes, 
+                ces dashboards permettent d'explorer et de mieux comprendre des jeux de données.
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 2%; padding-bottom: 3%;"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word;" class="encadrement">
+                <!-- <li> -->
+                Ce premier dashboard affiche les données fournies (quotidiennement) par le gouvernement français concernant les prix des différents carburants à travers le pays (en 2023).
+                Il offre une vue d'ensemble des fluctuations des prix de l'essence, du diesel et d'autres carburants,
+                permettant ainsi de suivre leur évolution dans le temps.
+                <!-- </li> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carouselDashFuel" class="carousel slide margin-top-sm-2" style="padding-bottom: 6.5vh;">
+
+        <!-- Indicateurs pour la navigation par points -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDashFuel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselDashFuel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselDashFuel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselDashFuel" data-bs-slide-to="3"></button>
+        </div>
+    
+        <!-- Contenu du carrousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/dashboard-fuel/dashboard-fuel-1.PNG" class="d-block" alt="Dashboard-Fuel" 
+                style="margin: auto; width: fit-content; height: auto; max-width: 75%;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/dashboard-fuel/dashboard-fuel-2.PNG" class="d-block mx-auto" alt="Dashboard-Fuel" 
+                style="margin: auto; width: fit-content; height: auto; max-width: 75%;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="images/dashboard-fuel/dashboard-fuel-2.PNG" class="d-block mx-auto" alt="Dashboard-Fuel" style="margin: auto; width: 75vw; height: 500px">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div> -->
+            <div class="carousel-item">
+                <img src="images/dashboard-fuel/dashboard-fuel-3.PNG" class="d-block mx-auto" alt="Dashboard-Fuel" 
+                style="margin: auto; width: fit-content; height: auto; max-width: 75%;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/dashboard-fuel/dashboard-fuel-4.PNG" class="d-block mx-auto" alt="Dashboard-Fuel" 
+                style="margin: auto; width: fit-content; height: auto; max-width: 75%;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Boutons pour passer aux slides précédents et suivants -->
+        <button class="carousel-control-prev" data-bs-target="#carouselDashFuel" data-bs-slide="prev" style="padding-right: 5%;">
+        <span class="carousel-control-prev-icon-style" aria-hidden="true">
+        </span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carouselDashFuel" data-bs-slide="next" style="padding-left: 5%;">
+        <span class="carousel-control-next-icon-style" aria-hidden="true"></span>
+        </button>
+
+    </div>
+
+    <div class="row justify-content-center margin-top-sm-2" style="padding-top: 4vh;">
+        <div style="display: flex; justify-content: center;" 
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <i class="bi-info-circle-fill text-info mx-2"></i>
+            <em>Le code source du dashboard ci-dessus n'est pas open source. 
+            Si vous souhaitez accéder au code pour des raisons spécifiques,
+            une invitation privée pourra vous être envoyée via GitHub.
+            N'hésitez pas à me contacter par mail pour expliquer votre demande.
+            </em>
+        </div>
+    </div>
+
+    <section class="row justify-content-center" style="padding-top: 5%; padding-bottom: 5%;">
+        <hr class="col-10 margin-top-sm-2" style="border: 2px solid; width: 92%;">
+    </section>
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-bottom: 3%;"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word;" class="encadrement">
+                <!-- <li> -->
+                    Le dashboard ci-dessous se concentre sur le trafic cycliste à Montpellier, grâce aux données collectées par des éco-compteurs. 
+                    Ces capteurs, placés dans divers endroits de la ville, enregistrent le nombre de vélos passant quotidiennement. 
+                    Cela permet de mieux comprendre les habitudes de déplacement à vélo, ainsi que l'évolution du trafic cycliste 
+                    au fil des saisons et des événements urbains.
+                <!-- </li> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselDashBike" class="carousel slide margin-top-sm-2" style="padding-bottom: 7vh;">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDashBike" data-bs-slide-to="0" class="active" aria-current="true" ></button>
+        <button type="button" data-bs-target="#carouselDashBike" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselDashBike" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselDashBike" data-bs-slide-to="3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/dasboard-bike/dashboard-bike-1.PNG" class="d-block" alt="Dashboard-Bike"
+                 style="margin: auto; width: fit-content; height: auto; box-shadow: rgb(0, 0, 0, 1) 0px 0px 20px; max-width: 75%;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/dasboard-bike/dashboard-bike-2.PNG" class="d-block mx-auto" alt="Dashboard-Bike" 
+                style="margin: auto; width: fit-content; height: auto; box-shadow: rgb(0, 0, 0, 1) 0px 0px 20px; max-width: 75%;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="images/dasboard-bike/dashboard-bike-2.PNG" class="d-block mx-auto" alt="Dashboard-Bike" style="margin: auto; width: 75vw; height: 500px; box-shadow: rgb(0, 0, 0) 0px 0px 20px;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div> -->
+            <div class="carousel-item">
+                <img src="images/dasboard-bike/dashboard-bike-3.PNG" class="d-block mx-auto" alt="Dashboard-Bike" 
+                style="margin: auto; width: fit-content; height: auto; box-shadow: rgb(0, 0, 0, 1) 0px 0px 20px; max-width: 75%;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/dasboard-bike/dashboard-bike-4.PNG" class="d-block mx-auto" alt="Dashboard-Bike" 
+                style="margin: auto; width: fit-content; height: auto; box-shadow: rgb(0, 0, 0, 1) 0px 0px 20px; max-width: 75%;">
+                <div class="carousel-caption d-none d-md-block"> 
+                </div>
+            </div>
+        </div>
+    
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDashBike" data-bs-slide="prev" style="padding-right: 5%;">
+        <span class="carousel-control-prev-icon-style" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDashBike" data-bs-slide="next" style="padding-left: 5%;">
+        <span class="carousel-control-next-icon-style" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <div class="row justify-content-center margin-top-sm-2" style="padding-bottom: 5%; padding-top: 4vh;">
+        <div style="display: flex; justify-content: center;" 
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <i class="bi-info-circle-fill text-info mx-2"></i>
+            <em>Si le code source du dashboard ci-dessus vous intéresse, vous pouvez consulter le 
+            code source du projet, en anglais, sur mon github: 
+            <a class="text-decoration-none" href="https://github.com/mohamedfattouhy/DashBike" target="_blank">DashBike</a>
+            </em>
+        </div>
+    </div>
+
+
+    <section class="row justify-content-center" style="padding-top: 4%; padding-bottom: 4%;">
+        <hr class="col-10 margin-top-sm-2" style="border: 2px solid; width: 92%;">
+    </section>
+
+
+    <h3 class="margin-top-sm-1" style="color: rgb(237, 81, 70); text-align: center; padding-bottom: 1.5%; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);">
+    <i class="bi bi-diagram-3-fill" style="color: rgb(237, 81, 70); margin-right: 1.5%;"></i>Machine Learning</h3>
+
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%;"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word; font-size: large; font-family:'Times New Roman', Times, serif">
+            Le <span style="font-weight: bold;">Machine Learning</span> (ou <span style="font-weight: bold;">apprentissage automatique</span>) est une branche de l'intelligence artificielle qui permet
+            à des machines (ordinateurs, systèmes) d'apprendre à partir de données, sans être explicitement programmées
+            pour chaque tâche. Grâce à des algorithmes, elles identifient des motifs dans les données d'entrainement et s'améliorent
+            au fil des itérations. Une fois l'algorithme entrainé, il peut faire des prédictions ou reconnaître des objets, par exemple.
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%;"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word; font-size: large; font-family:'Times New Roman', Times, serif">
+            Un des projets les plus captivant j'ai pu faire, consiste à entrainer un
+            <a class="text-decoration-none" href="https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels" target="_blank"><span>réseau de neurones</span></a> afin qu'il soit capable de détecter 
+            un visage humain via une webcam en temps réel. Ce projet, que j'ai nommé <span style="color: #d1551b;">FaceDetection</span>,
+            est disponible sur mon github: <a class="text-decoration-none" href="https://github.com/mohamedfattouhy/FaceDetection" target="_blank">FaceDetection</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%;"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word; font-size: large; font-family:'Times New Roman', Times, serif">
+            Le modèle utilisé pour réussir la detection est une variante de l'architecture dite <span style="font-weight: bold;">VGG16</span>, qui est
+            un <a class="text-decoration-none" href="https://fr.wikipedia.org/wiki/R%C3%A9seau_neuronal_convolutif" target="_blank">réseau neuronal convolutionnel (CNN)</a>. <br>
+            <br>
+            Le modèle se compose de deux éléments principaux :
+            <li> <span style="font-weight: bold; color: #58d389;">Classification</span>: chargée de déterminer si un visage est présent ou non dans l'image d'entrée.</li>
+            <li> <span style="font-weight: bold; color: #cf5f79;">Régression</span>: calcule les coordonnées des points pour définir un cadre rectangulaire autour du visage détecté.</li>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%; padding-bottom: 4%"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word; font-size: large; font-family:'Times New Roman', Times, serif">
+            Les coordonnées du rectangle qui délimitent le visage sont calculées en temps réel avec
+            les images provenant de la caméra, pour s'adapter aux mouvements de la personne.
+            </div>
+        </div>
+    </div>
+
+
+    <img src="images/schema-face-detection.jpg" class="d-block mx-auto" alt="schema-face-detection" 
+    style="margin: auto; width: fit-content; height: auto; box-shadow: rgb(0, 0, 0, 1) 0px 0px 20px; max-width: 75%;">
+
+
+    <section class="row justify-content-center" style="padding-top: 4%; padding-bottom: 4%;">
+        <hr class="col-10 margin-top-sm-2" style="border: 2px solid; width: 92%;">
+    </section>
+
+
+    <h3 class="margin-top-sm-1" style="color: rgb(244, 170, 51); text-align: center; padding-bottom: 1.5%; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);">
+    <i class="bi bi-graph-down" style="color: rgb(244, 170, 51); margin-right: 1.5%;"></i>Analyse Numérique</h3>
+    
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%;"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word; font-size: large; font-family:'Times New Roman', Times, serif">
+                L'<span style="font-weight: bold;">analyse numérique</span> est un domaine des mathématiques appliquées qui se
+                concentre sur le développement de <span style="font-weight: bold;">méthodes numériques</span> pour résoudre des problèmes mathématiques complexes.
+                Elle englobe une variété de techniques visant à approximer des solutions <span style="font-weight: bold; color: #c3911d;">d'équations différentielles</span>,
+                des <span style="font-weight: bold; color: #c3911d;">systèmes d'équations non-linéaires</span>, et <span style="font-weight: bold; color: #c3911d;">l'optimisation</span>, entre autres.
+
+                <br>
+                <br>
+
+                L'objectif principal de l'analyse numérique est de fournir des <span style="font-weight: bold;">algorithmes efficaces</span> qui garantissent une précision
+                adéquate tout en <span style="font-weight: bold;">minimisant le temps de calcul</span>. Ces méthodes sont essentielles dans de nombreux domaines scientifiques
+                et d'ingénierie, où les solutions exactes ne peuvent souvent pas être obtenues explicitement.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%;"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word; font-size: large; font-family:'Times New Roman', Times, serif">
+                Dans le cadre d'un projet en groupe durant mon Master, j'ai eu l'occasion d'explorer le <a class="text-decoration-none" href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_%C3%A0_N_corps#Remarque_sur_le_probl%C3%A8me_%C3%A0_trois_corps" target="_blank">problème à trois corps</a>,
+                qui modélise les interactions gravitationnelles entre trois corps (le <span style="font-weight: bold; color: #eebd4c;">Soleil</span>,
+                <span style="font-weight: bold; color: #b76f5b;">Mars</span> et la <span style="font-weight: bold; color: #1f7cb6;">Terre</span> dans notre cas). <br>
+
+                <br>
+            
+                Pour résoudre ce problème complexe, il a fallu appliqué des techniques d'analyse numérique,
+                en particulier la méthode de <a class="text-decoration-none" href="https://fr.wikipedia.org/wiki/M%C3%A9thodes_de_Runge-Kutta#La_m%C3%A9thode_de_Runge-Kutta_classique_d'ordre_quatre_(RK4)" target="_blank">Runge-Kutta d'ordre 4</a>.
+                Grâce à la robustesse et à la stabilité de cette méthode, nous avons pu d'obtenir
+                des approximations précises des trajectoires au fil du temps, en <span style="font-weight: bold;">simulant les effets gravitationnels mutuels</span>.
+                <br>
+
+                <br>
+                
+                Cette expérience a non seulement renforcé mes compétences en programmation
+                et en modélisation, mais a également illustré l'importance des méthodes numériques dans la résolution
+                de problèmes astrophysiques complexes.
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center margin-top-sm-2">
+        <div style="display: flex; padding-top: 1.5%; padding-bottom: 4%;"
+        class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
+            <div style="text-align: justify; text-justify: inter-word; font-size: large; font-family:'Times New Roman', Times, serif">
+            Un package <code>Python</code> a été crée pour ce projet, dont le code est disponible ici:
+            <a class="text-decoration-none" href="https://github.com/LauraElKaim/Project_Three_Body_Problem" target="_blank">Three Body Problem</a>.
+
+            Nous avons ainsi pu créer une simulation du mouvement du <span style="font-weight: bold; color: #eebd4c;">Soleil</span>,
+            de <span style="font-weight: bold; color: #b76f5b;">Mars</span>, et de la <span style="font-weight: bold; color: #1f7cb6;">Terre</span>.
+            </div>
+        </div>
+    </div>
+
+
+    <img src="images/Three_body_Problem.gif" class="d-block mx-auto" alt="Three_body_Problem" 
+        style="margin: auto; width: fit-content; height: auto; box-shadow: rgb(0, 0, 0, 1) 0px 0px 20px; border-radius: 10px;  max-width: 75%;">
+    <div style="padding-bottom: 5%;"></div>
+
+    </main>
+
+    <footer class="footer border-top border-1 mt-4" style="background-color: #253c52; width: 100%;">
+
+        <div style="text-align: center; padding-top: 1%; padding-bottom: 1%;">
+            <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Me contacter</h2>
+        </div>
+
+        <hr class="mt-0 col-6 offset-3">
+        
+        <div class="row justify-content-center" style="padding-bottom: 2%;">
+
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 text-center margin-top-sm-1" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: large;">
+                <span><i class="bi bi-mailbox" style="color: white; font-size: 20px;"></i>
+                    <div class="vr" style="visibility: hidden; padding-left: 5px;"></div> 
+                    Email personnel <br>
+                    <div style="color: rgb(76, 155, 232);">m.fattouhy@hotmail.com</div>
+                </span>
+            </div>
+
+            <div class="col-xxl-3 col-xl-3  col-lg-3 col-md-6 col-sm-12 col-12 margin-top-sm-2 text-center" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: large;">
+                <span><i class="bi bi-linkedin" style="color: white; font-size: 20px;"></i>
+                <div class="vr" style="visibility: hidden; padding-left: 5px;"></div>
+                Linkedin <br>
+                </span>
+                <a class="text-decoration-none" href="https://www.linkedin.com/in/mohamed-fattouhy-b0a22a264/" target="_blank">in/mohamed-fattouhy</a>
+            </div>
+        </div>  
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
