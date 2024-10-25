@@ -1,0 +1,306 @@
+/* En-tête */
+header {
+  color: #fff;
+  text-align: center;
+  padding-top: 10%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;  /* Force le body à prendre toute la largeur du viewport */
+  overflow-x: hidden;  /* Empêche le débordement horizontal */
+}
+
+
+/* Style du pop-up */
+/* .popup {
+display: none; Le pop-up est caché par défaut
+position: fixed;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+color: black;
+padding: 20px;
+border: 2px solid #000;
+z-index: 9999;
+}
+
+.popup button {
+right: 10px;
+position: absolute; 
+} */
+
+/* Navbar -> effet après survol (écran pc) */
+@media (min-width: 1200px){
+.lien-nav:hover {
+  box-shadow: inset 200px 0px 0px 0px #3669f1;
+  transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+
+}
+}
+
+/* Navbar Item -> effet après survol */
+#navbar-nav .lien-nav:hover {
+transform: scale(1.1);
+}
+
+
+/* Navbar Item -> effet après activation (clique) */
+.nav-item.show .nav-link, .nav-link.active {
+  background-color: #4162be;
+  border-color: #4e5d6c;
+}
+
+/* Progress Bar */
+#progress-bar {
+width: 100vw;
+/* background: rgb(146, 172, 210); */
+background: rgb(81, 102, 134); 
+height: 5px;
+position: absolute;
+bottom: 0;
+z-index: 20;
+left: 0;
+}
+
+#progress {
+display: inline-block;
+background: white;
+height: 5px; 
+vertical-align: top;
+transition: all 0.1s ease-in-out;
+}
+
+/* Styles des lignes horizontales */
+.hr-styles{
+background: rgb(43,165,212);
+background: linear-gradient(90deg, rgb(39, 182, 238) 20%, rgba(68,244,147,1) 50%, rgb(39, 182, 238) 85%);
+}
+
+.hr-styles-2{
+background: rgb(43,165,212);
+background: linear-gradient(90deg, rgb(137, 63, 235) 20%, rgb(68, 221, 241) 50%, rgb(137, 63, 235) 85%);
+}
+
+
+/* Effet d'agrandissement après survol souris */
+.button-resume-grow:hover {
+transform: scale(1.1);
+}
+
+
+/* Style du bouton de téléchargement du CV */
+.custom-btn-resume {
+color: #fff;
+background: #678bf0;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+outline: none;
+}
+
+
+.button-resume:after {
+position: absolute;
+content: "";
+width: 0;
+height: 100%;
+top: 0;
+left: 0;
+direction: rtl;
+z-index: -1;
+box-shadow:
+ -2px -2px 10px 0px #819deb,
+ -2px -2px 2px 0px #819deb;
+transition: all 0.3s ease;
+border-radius: 10px;
+}
+
+
+.button-resume:hover {
+color: #000;
+}
+.button-resume:hover:after {
+left: auto;
+right: 0;
+width: 100%;
+}
+
+
+/* Rendre la navbar responsive (pour les petits écrans) */
+@media (max-width: 767.98px) {
+
+  .navbar-nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar-nav.active {
+      display: flex;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
+
+  .nav-item {
+      text-align: center;
+  }
+}
+
+
+/* Gestion du margin-top pour les écrans moyens (type tablette) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+.margin-top-md-1{
+  margin-top: 1em;
+}
+
+}
+
+
+/* Gestion du margin-top pour les petits écrans (type smartphone) */
+@media (max-width: 575.98px) {
+
+.margin-top-sm-1 {
+  margin-top: 1em;
+}
+
+.margin-top-sm-2 {
+      margin-top: 2em;
+  }
+
+.margin-top-sm-6 {
+  margin-top: 6em;
+}
+
+}
+
+
+/* Gestion de la justification des items de la navbar selon la taille d'écran */
+@media (max-width: 576px) {
+.justify-content-center-resp{justify-content: left;}
+}
+
+@media (min-width: 576px) {
+.justify-content-center-resp{justify-content: center;}
+}
+
+
+/* Centrer le texte pour les petits écrans (type smartphone) */
+@media (max-width: 575.92px){
+.center-text-sm {
+  text-align: center;
+
+  }
+}
+
+
+/* Style des flèches du carousel */
+.carousel-control-next-icon-style:before,
+.carousel-control-prev-icon-style:after {
+color: white;
+background: rgba(255,255,255,0.2);
+padding: 1rem;
+font-size: 4vw;
+cursor: pointer;
+}
+
+.carousel-control-next-icon-style:before {
+content: "\276D";
+border-radius: 80%;
+}
+
+.carousel-control-prev-icon-style:after {
+content: "\276C";
+border-radius: 80%;
+}
+
+
+/* Gestion de l'alignement du texte selon la taille de l'écran */
+@media (max-width: 575.98px) {
+.col-10-custom{
+  text-align: left;
+  width: 83.33%;
+  padding: 0%;
+}
+}
+
+@media (min-width: 576px) {
+.col-10-custom{
+  text-align: center;
+}
+}
+
+@media (max-width: 575.98px) {
+.col-10-custom-1{
+  text-align: left;
+  width: 83.33%;
+  padding: 0%;
+  padding-left: 14vw;
+}
+}
+
+@media (max-width: 575.98px) {
+.col-10-custom-2{
+  text-align: left;
+  width: 83.33%;
+  padding: 0%;
+  padding-left: 6vw;
+}
+}
+
+@media (max-width: 575.98px) {
+.col-10-custom-3{
+  text-align: left;
+  width: 83.33%;
+  padding: 0%;
+  padding-left: 2vw;
+}
+}
+
+@media (max-width: 575.98px) {
+.col-8-custom-experiences{
+  text-align: left;
+  width: 66.67%;
+  padding: 0%;
+  padding-left: 10vw;
+}
+} 
+
+
+@media (min-width: 576px) {
+.padding-left-custom{
+  padding-left: 2vw;
+}
+}
+
+
+/* Gestion de la position des icônes */
+@media (min-width: 576px) {
+.custom-icon-position{
+  text-align: right;
+}
+} 
+
+@media (max-width: 575.98px) {
+.custom-icon-position-sm{
+  text-align: center;
+}
+} 
+
+/* Encadrement du texte */
+.encadrement {
+border: 1px solid rgb(180, 19, 238);
+background-color: #ac6ee6;
+padding: 15px;
+color: black;
+text-align: center;
+border-radius: 10px; 
+width: fit-content;
+margin: 0 auto; 
+}
