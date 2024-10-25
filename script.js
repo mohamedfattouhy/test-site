@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-/ Gestion de la progression de la bar en fonction du scroll
+// Gestion de la progression de la bar en fonction du scroll
 const main = document.querySelector('main'),
   progressBar = document.querySelector('#progress');
 
