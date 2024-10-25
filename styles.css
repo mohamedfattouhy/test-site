@@ -8,7 +8,7 @@ header {
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;  /* Force le body à prendre toute la largeur du viewport */
+  width: 100%;  /* Force le body à prendre toute la largeur du viewport */
   overflow-x: clip;  /* Empêche le débordement horizontal */
 }
 
@@ -303,4 +303,40 @@ text-align: center;
 border-radius: 10px; 
 width: fit-content;
 margin: 0 auto; 
+}
+
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#a59cf7;
+  stroke-width: 7;
+  stroke-linecap:round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
 }
