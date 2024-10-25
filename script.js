@@ -101,7 +101,7 @@ document.addEventListener('scroll', () => {
       ),
       clientHeight = document.documentElement.clientHeight,
       userScroll = window.scrollY,
-      pctScrolled = Math.round((userScroll / (totalHeight-clientHeight))*1.05*100) ;
+      pctScrolled = Math.round((userScroll / (totalHeight-clientHeight))*100) ;
   
   progressBar.style.width = pctScrolled + '%';
 
