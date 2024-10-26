@@ -136,7 +136,7 @@ function isMobileDevice() {
 
 // Fonction pour afficher le pop-up si le mode sombre est activé
 function checkDarkMode() {
-    if (isMobileDevice()) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice()) {
         document.querySelector('.popup').style.display = 'block';
         // localStorage.setItem("darkMode", "true");
     }
