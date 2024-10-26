@@ -15,7 +15,7 @@ body {
 
 /* Style du pop-up */
 .popup {
-display: none; Le pop-up est caché par défaut
+display: block; /* Le pop-up est caché par défaut */
 position: fixed;
 top: 20%;
 left: 50%;
