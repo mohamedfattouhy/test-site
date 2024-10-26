@@ -124,7 +124,11 @@ function isMobileDevice() {
 
 // Affichage conditionnel du popup
 function showPopup() {
-    const popupDisplayed = localStorage.getItem("darkModePopup");
+
+    // Enregistrer dans le local storage
+    localStorage.setItem("darkModePopup", "false");
+    
+    const popupDisplayed = localStorage.getItem("darkModePopup") === "true";
     return !popupDisplayed
 }
 
@@ -133,9 +137,6 @@ function checkDarkMode() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice() && showPopup()) {
         document.getElementById('darkModePopup').style.display = 'block';
     }
-
-    // Enregistrer dans le local storage
-    localStorage.setItem("darkModePopup", "true");
 }
 
 // Vérification au chargement de la page
