@@ -55,38 +55,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// ------------------------------------------------------
+
 // Pop-up si le site est consulté sur mobile pour inciter à desactiver le mode sombre
 
-// Fonction pour vérifier si l'utilisateur est sur mobile
-function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
-}
-
-// Fonction pour afficher le pop-up si le mode sombre est activé
-function checkDarkMode() {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice()) {
-        document.getElementById('darkModePopup').style.display = 'block';
-    }
-}
-
-// // Fonction pour fermer le pop-up
-// function closePopup() {
-//     document.getElementById('darkModePopup').style.display = 'none';
+// // Fonction pour vérifier si l'utilisateur est sur mobile
+// function isMobileDevice() {
+//     return /Mobi|Android/i.test(navigator.userAgent);
 // }
 
-function closePopup() {
-    // Logique pour fermer le popup
-    const popup = document.getElementById('darkModePopup'); // Assure-toi d'avoir un élément avec cet ID
-    if (popup) {
-      popup.style.display = 'none'; // Cache le popup
-    }
-  }
+// // Fonction pour afficher le pop-up si le mode sombre est activé
+// function checkDarkMode() {
+//     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice()) {
+//         document.getElementById('darkModePopup').style.display = 'block';
+//     }
+// }
 
-// Vérification au chargement de la page
-document.addEventListener('DOMContentLoaded', function() {
-    checkDarkMode();
-});
+// // // Fonction pour fermer le pop-up
+// // function closePopup() {
+// //     document.getElementById('darkModePopup').style.display = 'none';
+// // }
 
+// function closePopup() {
+//     // Logique pour fermer le popup
+//     const popup = document.getElementById('darkModePopup'); // Assure-toi d'avoir un élément avec cet ID
+//     if (popup) {
+//       popup.style.display = 'none'; // Cache le popup
+//     }
+//   }
+
+// // Vérification au chargement de la page
+// document.addEventListener('DOMContentLoaded', function() {
+//     checkDarkMode();
+// });
+
+// ------------------------------------------------------
 
 // Gestion de la progression de la bar en fonction du scroll
 const main = document.querySelector('main'),
@@ -112,3 +115,40 @@ document.addEventListener('scroll', () => {
   progressBar.style.width = pctScrolled + '%';
 
 });
+
+
+// Fonction pour vérifier si l'utilisateur est sur mobile
+function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+// Affichage conditionnel du popup
+function showPopup() {
+    const popupDisplayed = localStorage.getItem("darkModePopup");
+    return !popupDisplayed
+}
+
+// Fonction pour afficher le pop-up si le mode sombre est activé
+function checkDarkMode() {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice() && showPopup()) {
+        document.getElementById('darkModePopup').style.display = 'block';
+    }
+
+    // Enregistrer dans le local storage
+    localStorage.setItem("darkModePopup", "true");
+}
+
+// Vérification au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    checkDarkMode();}
+
+);
+
+function closePopup() {
+    
+    // Logique pour fermer le popup
+    const popup = document.getElementById('darkModePopup');
+    if (popup) {
+      popup.style.display = 'none'; // Cache le popup
+    }
+  }
