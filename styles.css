@@ -14,7 +14,7 @@ body {
 
 
 /* Style du pop-up */
-/* .popup {
+.popup {
 display: none; Le pop-up est caché par défaut
 position: fixed;
 top: 20%;
@@ -30,7 +30,7 @@ z-index: 9999;
 .popup button {
 right: 10px;
 position: absolute; 
-} */
+}
 
 /* Navbar -> effet après survol (écran pc) */
 @media (min-width: 1200px){
