@@ -118,7 +118,7 @@ document.addEventListener('scroll', () => {
 
 
 
-// localStorage.removeItem("darkMode");
+localStorage.removeItem("darkMode");
 
 // Fonction pour vérifier si l'utilisateur est sur mobile
 function isMobileDevice() {
@@ -148,7 +148,7 @@ function checkDarkMode() {
     }
 
     // Enregistrer dans le local storage
-    localStorage.setItem("darkMode", "false");
+    // localStorage.setItem("darkMode", "false");
 
 }
 
