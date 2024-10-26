@@ -127,18 +127,18 @@ function isMobileDevice() {
     return /Mobi|Android|iPhone/i.test(navigator.userAgent);
 }
 
-// Affichage conditionnel du popup
-function showPopup() {
+// // Affichage conditionnel du popup
+// function showPopup() {
 
-    const popupDisplayed = localStorage.getItem("darkMode") === "true";
-    return !popupDisplayed;
-}
+//     const popupDisplayed = localStorage.getItem("darkMode") === "true";
+//     return !popupDisplayed;
+// }
 
 // Fonction pour afficher le pop-up si le mode sombre est activé
 function checkDarkMode() {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice() && showPopup()) {
+    if (isMobileDevice()) {
         document.querySelector('.popup').style.display = 'block';
-        localStorage.setItem("darkMode", "true");
+        // localStorage.setItem("darkMode", "true");
     }
 }
 
