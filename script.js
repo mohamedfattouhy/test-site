@@ -117,6 +117,11 @@ document.addEventListener('scroll', () => {
 });
 
 
+// Pop-up si le site est consulté sur mobile pour inciter à desactiver le mode sombre
+
+
+// localStorage.removeItem("darkModePopup");
+
 // Fonction pour vérifier si l'utilisateur est sur mobile
 function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
@@ -125,19 +130,21 @@ function isMobileDevice() {
 // Affichage conditionnel du popup
 function showPopup() {
 
-    // Enregistrer dans le local storage
-    localStorage.setItem("darkModePopup", "false");
-    
     const popupDisplayed = localStorage.getItem("darkModePopup") === "false";
     return !popupDisplayed
 }
 
 // Fonction pour afficher le pop-up si le mode sombre est activé
 function checkDarkMode() {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice()) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice() && showPopup()) {
         document.getElementById('darkModePopup').style.display = 'block';
     }
+
+    // Enregistrer dans le local storage
+    localStorage.setItem("darkModePopup", "false");
+
 }
+
 
 // Vérification au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
