@@ -128,13 +128,13 @@ function showPopup() {
     // Enregistrer dans le local storage
     localStorage.setItem("darkModePopup", "false");
     
-    const popupDisplayed = localStorage.getItem("darkModePopup") === "true";
+    const popupDisplayed = localStorage.getItem("darkModePopup") === "false";
     return !popupDisplayed
 }
 
 // Fonction pour afficher le pop-up si le mode sombre est activé
 function checkDarkMode() {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice() && showPopup()) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && isMobileDevice()) {
         document.getElementById('darkModePopup').style.display = 'block';
     }
 }
