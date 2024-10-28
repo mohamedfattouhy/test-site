@@ -157,3 +157,26 @@ function closePopup() {
     }
   }
 
+function copyToClipboard(event) {
+    const email = "m.fattouhy@hotmail.com";
+
+    // Copie l'email dans le presse-papiers
+    navigator.clipboard.writeText(email).then(() => {
+
+        // Affiche la notification "Copié !" près du curseur
+        const notification = document.getElementById("copyNotification");
+        notification.style.opacity = 1; // Rend le message visible
+        
+        // // Positionne la notification à côté du curseur
+        // notification.style.left = `${event.pageX + 150}px`;
+        // notification.style.top = `${event.pageY + 15}px`;
+
+        // Cache le message après 1 seconde
+        setTimeout(() => {
+            notification.style.opacity = 0;
+        }, 1000);
+
+    }).catch(err => {
+        console.error("Erreur de copie : ", err);
+    });
+}
